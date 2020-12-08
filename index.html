@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navigation">
+        <div id="sidenav" class="sidenav">
+            <a class="link" href="#home">HOME</a>
+            <a class="link" href="#about">ABOUT</a>
+            <a class="link" href="#shop">SHOP</a>
+            <a class="link" href="#contact">CONTACT</a>
+        </div>
+        <span id="menu" class="burger">
+            <div class="line"></div>
+            <div id="line2" class="line"></div>
+            <div class="line"></div>
+        </span>
+        <span id="closeBtn" class="close">X</span>
+    </div>
+    <main id="content" class="main">
+        <!--change color of selected letters. needs contentedittable-->
+        <header>
+            <div contenteditable id="heading">
+                <span style="color: orange;">B</span>ack <span style="color: orange;">P</span>ack
+            </div>            
+        </header>
+        <div id="home">
+            <h2 id="question">I always have my backpack,<br>do you?</h2>
+            <button id="shopping"><a href="#shop">Shop Now</a></button>
+        </div>
+        <div id="about">
+            <h2>ABOUT</h2>
+            <div id="text">
+                <p>Backpacks are essential to my life. Everywhere I go I carry a backpack with me. It makes life so much easier. Here I'll present my favorite ones...</p>
+            </div>
+        </div>
+        <div id="shop">
+            <h2>SHOP</h2>
+            <div id="container">
+                <div class="product">
+                    <img src="astro-scout.webp" alt="Backpack" width="180" height="150">
+                    <h4>Description</h4>
+                    <p>This is a smaller backpack but still fits your laptop.</p>
+                    <button class="buy"><a href="https://www.astrogaming.com/en-us/products/gear/bags/astro-scout-backpack.html#943-000127" target="_blank">Buy</a></button>
+                </div>
+                <div id="product2" class="product">
+                    <img src="aevor-daypack.png" alt="Backpack" width="180" height="150">
+                    <h4>Description</h4>
+                    <p>With it's features you have more than plenty space inside.</p>
+                    <button class="buy"><a href="https://www.aevor.com/de/daypack-proof-black" target="_blank">Buy</a></button>
+                </div>
+                <div class="product">
+                    <img src="soolgard-lifepack.webp" alt="Backpack" width="180" height="150">
+                    <h4>Description</h4>
+                    <p>Has got a solar powered speaker that functions also as a battery bank.</p>
+                    <button class="buy"><a href="https://solgaard.co/products/lifepack-backpack?variant=12300640747567" target="_blank">Buy</a></button>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="contact">
+            <h2>If you want to contact me:</h2>
+            <form id="contact-form" action="site.php" method="post">
+                <input type="email" name="email" id="email" placeholder="E-Mail">
+                <br>
+                <textarea name="message" id="message" placeholder="Pls Enter Your Message" cols="30" rows="10"></textarea>
+                <br>
+                <button id="send" type="submit">SEND</button>
+            </form>
+        </div>
+    </main>
+</body>
+<script src="main.js"></script>
+</html>
